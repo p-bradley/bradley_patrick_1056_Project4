@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+.hidden
+{
+	display: none
+}
+
+#container
+{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+
+.box {
+  display: flex;
+  flex: 1 1 50px;
+  height: 600px;
+}
+
+#boxes
+{
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+	.pinkBox
+	{
+		background-color: red;
+		height: 100px;
+
+	}
+
+	.redBox
+	{
+		background-color: pink;
+		height: 100px;
+	}
+
+	.greyBox
+	{
+		display: none;
+
+	}
+
+	.brownBox
+	{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 641px) {
+
+#boxes
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.box {
+  display: flex;
+  flex: 1 1 50px;
+  height: 600px;
+}
+
+.pinkBox 
+{
+	background-color: blue;
+	height: 300px; 
+}
+
+.redBox 
+{
+	background-color: purple;
+	height: 300px;
+}
+
+.greyBox
+	{
+		background-color: grey;
+		height: 300px;
+	
+	}
+
+.brownBox
+	{
+		background-color: brown;
+		height: 300px;
+	}
